@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'karty',
 
-  projectId: 'snw0fc16',
+  projectId: 'j6m9ojxd',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
