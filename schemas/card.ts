@@ -11,8 +11,8 @@ export default {
       validation: [
         (Rule: {required: () => any}) =>
           Rule.required()
-            .min(6)
-            .max(6)
+            .min(5)
+            .max(5)
             .custom(async (number: string, {document, getClient}: any) => {
               const client = getClient({apiVersion: '2021-10-21'})
               const data: any[] = await client.fetch('*[_type == "card"]{_id,number,title}')
